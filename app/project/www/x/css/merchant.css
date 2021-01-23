@@ -1,0 +1,491 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.body {
+	background-color: #E5E5E5;
+}
+
+#top {
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	position: fixed;
+}
+
+#main {
+	width: 100%;
+	padding-top: 50px;
+}
+
+
+#footer {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	bottom:0px;
+	position: fixed;
+}
+
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 50px;
+    background: #f5f5f5;
+}
+.container{
+    /*margin: 0 auto;*/
+}
+.content {
+    margin-top: 50px;
+}
+
+.row {
+    padding-top: 8px;
+}
+/* Box Model Start */
+.align-center {
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.align-right {
+    text-align: right;
+    padding: 8px;
+}
+/* Margin Start */
+.margin{
+    margin: 8px;
+}
+.margin-top{
+    margin-top: 8px;
+}
+.margin-bottom{
+    margin-bottom: 8px;
+}
+.margin-left{
+    margin-left: 8px;
+}
+.margin-right{
+    margin-right: 8px;
+}
+
+.margin-top-xs{
+    margin-top: 10px;
+}
+.margin-top-sm{
+    margin-top: 15px;
+}
+.margin-top-md{
+    margin-top: 18px;
+}
+.margin-top-lg{
+    margin-top: 20px;
+}
+
+.margin-bottom-xs{
+    margin-bottom: 10px;
+}
+.margin-bottom-sm{
+    margin-bottom: 15px;
+}
+.margin-bottom-md{
+    margin-bottom: 18px;
+}
+.margin-bottom-lg{
+    margin-bottom: 20px;
+}
+
+.margin-left-xs{
+    margin-left: 10px;
+}
+.margin-left-sm{
+    margin-left: 15px;
+}
+.margin-left-md{
+    margin-left: 18px;
+}
+.margin-left-lg{
+    margin-left: 20px;
+}
+
+.margin-right-xs{
+    margin-right: 10px;
+}
+.margin-right-sm{
+    margin-right: 15px;
+}
+.margin-right-md{
+    margin-right: 18px;
+}
+.margin-right-lg{
+    margin-right: 20px;
+}
+/* Margin End */
+
+/* Padding Start */
+.padding{
+    padding: 8px;
+}
+.padding-top{
+    padding-top: 8px;
+}
+.padding-bottom{
+    padding-bottom: 8px;
+}
+.padding-left{
+    padding-left: 8px;
+}
+.padding-right{
+    padding-right: 8px;
+}
+/* Padding End */
+
+/* Box Model End */
+
+/* Layout Start */
+.card {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.card-small {
+    width: 50%;
+}
+/* Layout End */
+
+/* Form Start */
+.form-fieldset{
+    border:1px solid silver
+}
+.form-legend{
+    font-size: 16pt;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.form-group {
+    position: relative;
+    margin-left: 20px;
+}
+
+.form-input {
+    margin-top: 15px;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px #d0d0d0;
+    font-size: 16px;
+    width: 91.66666667%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-input:focus, .form-input:active {
+    outline: none;
+    border-bottom: solid 1px #009688;
+}
+
+.form-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #d0d0d0;
+}
+
+.form-input:focus + .form-label {
+    color: #009688;
+}
+
+.form-hepler {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #808080;
+    margin-top: 8px;
+}
+/* Form Button Start */
+.form-button {
+    border: none;
+    border-radius: 2px;
+    padding: 8px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: 0;
+    cursor: pointer;
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.form-button:active {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.form-button:hover {
+    background-color: #5BC3E2;
+}
+.button-success{
+    background-color: #00A999;
+}
+.button-success:hover{
+    background-color: #00B7A6;
+}
+.button-danger{
+    background-color: #FF5252;
+}
+.button-danger:hover{
+    background-color: #944444;
+}
+/* Form Button End */
+.form-icon {
+    position: absolute;
+}
+
+.input-group {
+    position: relative;
+}
+
+.form-link {
+    float: left;
+    margin-top: 8px;
+}
+.radio-group{
+    padding-top: 25px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.form-radio{
+    margin-top: 15px;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    margin-left: 25px;
+}
+.radio-group .circle{
+    border: 2px solid rgba(0,0,0, .54);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.radio-group .check{
+    border-radius: 100%;
+    position: absolute;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: #009688;
+    left: 13px;
+    bottom: 3px;
+}
+.form-radio input[type="radio"]:checked ~ .radio-group .check{
+    height: 13px;
+    width: 13px;
+}
+.form-radio:checked + .check {
+    height: 13px;
+    width: 13px;
+}
+/* Form End */
+.title{
+    font-size: 18pt;
+}
+.title-hepler{
+    font-size: 12pt;
+}
+.fancybox-inner {
+    overflow: hidden !important;
+}
+.error-message{
+    color: #f00;
+}
+.ui-widget-content{
+    background: none;
+}
+.working-hour-setting{
+    width: 100%;
+}
+.timepicker-container{
+    width: 500px;
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    z-index: 1;
+}
+.timepicker-container .slider{
+    width: 50%;
+    display: inline-block;
+}
+.timepicker-container .label{
+    display: inline-block;
+    width: 30%;
+}
+.timepicker-container .timepicker-slider{
+    width: 50%;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.timepicker-container .timepicker-display{
+    width: 50%;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+.timepicker-container .timepicker-action{
+    text-align: right;
+    padding-bottom: 8px;
+}
+
+.timepicker .time-input:focus + .timepicker-container{
+    /*display: block;*/
+}
+
+.timepicker{
+    width: 45%;
+    display: inline-block;
+}
+
+.timepicker .form-label{
+    position: static;
+    color: #000;
+    display: inline-block;
+    width: 15%;
+}
+
+.timepicker .time-input{
+    width: calc(100% - 30%);
+}
+
+.hour-setting{
+    display: inline-block;
+}
+.timepicker-table{
+    width: 100%;
+}
+.timepicker-label-cell{
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+.timepicker-several{
+    display: none;
+}
+
+.checkbox-group {
+    min-height: 30px;
+    padding-top: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.checkbox-group label{
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #BDBDBD;
+    font-weight: 400;
+    min-height: 22px;
+    cursor: pointer;
+    padding-left: 0;
+    text-align: right;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.checkbox-group .form-checkbox:before{
+    display: block;
+    position: absolute;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.84);
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+    margin: 0;
+    -webkit-transform: scale3d(2.3, 2.3, 1);
+    transform: scale3d(2.3, 2.3, 1);
+}
+
+.checkbox-group .form-checkbox{
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    pointer-events: none;
+    line-height: normal;
+}
+
+.checkbox-group .checkbox-square{
+    vertical-align: middle;
+    position: relative;
+    top: 3px;
+    overflow: hidden;
+}
+
+.checkbox-group .check{
+    position: absolute;
+    border: 2px solid rgba(0,0,0, .54);
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    background-color: #fff;
+}
+
+.checkbox-group .form-checkbox:checked ~ .checkbox-square .check{
+    position: absolute;
+    color: #009688;
+    background-color: #009688;
+
+}
+
+.checkbox-group .check:before{
+    position: absolute;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    margin-top: -4px;
+    margin-left: 6px;
+    -webkit-box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+    -webkit-animation: checkbox-on 0.3s forwards;
+
+}
+
+.checkbox-square .checkbox-label{
+    margin-left: 25px;
+}
