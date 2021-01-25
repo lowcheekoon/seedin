@@ -53,6 +53,20 @@
 					</div>
 				</li>
 				
+				<li>
+					<a class="collapsible-header waves-effect arrow-r">
+						<i class="fa fa-user"></i> Order / Transaction
+						<i class="fa fa-angle-down rotate-icon"></i>
+					</a>
+					<div class="collapsible-body">
+						<ul>
+							<li>
+								<a href="<?= site_url("admin/order") ?>" class="waves-effect">List</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				
 			<? if(false && $this->online_admin->adminInformation->admin_level=="1"): ?>	
 				<li>
 					<a class="collapsible-header waves-effect arrow-r">

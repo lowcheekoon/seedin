@@ -587,50 +587,6 @@ $config['email_login'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
-| Email Configuration
-|--------------------------------------------------------------------------
-|
-
-|
-*/
-$config['email'] = array(
-						"protocol" 	=> "smtp",
-						"smtp_host" => "ssl://smtp.googlemail.com",
-						"smtp_port" => 465,
-						"smtp_user" => "scalper.enterprise@gmail.com",
-						"smtp_pass" => "1234qwerasdf",
-						"mailtype"  => "html", 
-						"charset"   => "UTF-8",
-						"newline"   => "\r\n",
-						); 
-
-
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Email Properties
-|--------------------------------------------------------------------------
-|
-
-|
-*/
-$config['company'] = array(
-						"email" 			=> "customerservice@cms.com",
-						"email-bc" 			=> "lowcheekoon@gmail.com",
-						"email-bcc" 		=> "lowcheekoon@gmail.com",
-						"hotline" 			=> "07-2345678",
-						"management-team" 	=> "CMS Management Team",
-						); 
-						
-
-
-
-
-
-/*
-|--------------------------------------------------------------------------
 | Mobile Access Configuration
 |--------------------------------------------------------------------------
 |

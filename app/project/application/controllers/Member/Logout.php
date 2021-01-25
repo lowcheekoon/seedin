@@ -12,8 +12,8 @@ class Logout extends MY_Controller {
 	
 	function index()
 	{
-		$this->online_admin->destroy_session();
-		redirect('admin/login');
+		$this->online_member->destroy_session();
+		redirect('member/login');
 	}
 	
 	

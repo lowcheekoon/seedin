@@ -6,7 +6,7 @@
 		<li class="logo-sn waves-effect">
 			<div class=" text-center">
 				<a href="#" class="pl-0">
-					<p class="text-center"><?= $this->online_admin->adminInformation->admin_username ?></p>
+					<p class="text-center"><?= $this->online_member->memberInformation->member_username ?></p>
 					<? /* <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class=""> */ ?>
 				</a>
 			</div>
@@ -34,59 +34,27 @@
 					<div class="collapsible-body">
 						<ul>
 							<li>
-								<a href="<?= site_url("admin/item") ?>" class="waves-effect">List</a>
+								<a href="<?= site_url("member/item") ?>" class="waves-effect">List</a>
 							</li>
 						</ul>
 					</div>
 				</li>
 				<li>
 					<a class="collapsible-header waves-effect arrow-r">
-						<i class="fa fa-user"></i> Client
+						<i class="fa fa-user"></i> Order / Transaction
 						<i class="fa fa-angle-down rotate-icon"></i>
 					</a>
 					<div class="collapsible-body">
 						<ul>
 							<li>
-								<a href="<?= site_url("client/listing") ?>" class="waves-effect">listing</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class="collapsible-header waves-effect arrow-r">
-						<i class="fa fa-briefcase"></i> Transaction
-						<i class="fa fa-angle-down rotate-icon"></i>
-					</a>
-					<div class="collapsible-body">
-						<ul>
-							<li>
-								<a href="#" class="waves-effect">Introduction</a>
-							</li>
-							<li>
-								<a href="#" class="waves-effect">Monthly meetings</a>
+								<a href="<?= site_url("member/order") ?>" class="waves-effect">List</a>
 							</li>
 						</ul>
 					</div>
 				</li>
 				
-			<? if(false && $this->online_admin->adminInformation->admin_level=="1"): ?>	
 				<li>
-					<a class="collapsible-header waves-effect arrow-r">
-						<i class="fa fa-user-circle"></i> Administrator
-						<i class="fa fa-angle-down rotate-icon"></i>
-					</a>
-					<div class="collapsible-body">
-						<ul>
-							<li>
-								<a href="<?= site_url("admin/listing") ?>" class="waves-effect">Listing</a>
-							</li>
-						</ul>
-					</div>
-				</li>
-			<? endif; ?>
-			
-				<li>
-					<a href="<?= site_url("admin/logout") ?>" class="waves-effect">
+					<a href="<?= site_url("member/logout") ?>" class="waves-effect">
 						<i class="fa fa-sign-out"></i> Log Out
 					</a>
 				</li>

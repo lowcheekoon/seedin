@@ -32,11 +32,11 @@
 		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<i class="fa fa-user"></i>
-				<span class="clearfix d-none d-sm-inline-block">Account</span>
+				<span class="clearfix d-none d-sm-inline-block">Member</span>
 			</a>
 			<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 				<!--a class="dropdown-item" href="<?= site_url('admin/change_password') ?>">Change Password</a-->
-				<a class="dropdown-item" href="<?= site_url('admin/logout') ?>">Log Out</a>
+				<a class="dropdown-item" href="<?= site_url('member/logout') ?>">Log Out</a>
 			</div>
 		</li>
 	</ul>

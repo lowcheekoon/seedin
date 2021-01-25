@@ -45,13 +45,18 @@ CREATE TABLE `cart` (
   `cart_item_name` varchar(255) NOT NULL DEFAULT '',
   `cart_item_price` decimal(20,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`cart_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 /*Data for the table `cart` */
 
 insert  into `cart`(`cart_id`,`cart_member_id`,`cart_item_id`,`cart_status`,`cart_item_name`,`cart_item_price`) values 
-(1,1,1,1,'Product ABC',16.00),
-(2,1,1,1,'Product ABC',16.00);
+(1,1,1,2,'Product ABC',16.00),
+(2,1,1,2,'Product ABC',16.00),
+(3,1,4,2,'Product BBB',5.00),
+(4,1,1,2,'Product ABC',16.00),
+(5,1,4,2,'Product BBB',5.00),
+(6,1,1,2,'Product ABC',16.00),
+(7,1,1,2,'Product ABC',16.00);
 
 /*Table structure for table `item` */
 
@@ -89,6 +94,54 @@ CREATE TABLE `member` (
 
 insert  into `member`(`member_id`,`member_status`,`member_username`,`member_password`) values 
 (1,1,'tester@gmail.com','tester');
+
+/*Table structure for table `order` */
+
+DROP TABLE IF EXISTS `order`;
+
+CREATE TABLE `order` (
+  `order_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `order_member_id` bigint(20) NOT NULL DEFAULT '0',
+  `order_status` tinyint(3) NOT NULL DEFAULT '0',
+  `order_vourcher_code` varchar(255) NOT NULL DEFAULT '',
+  `order_amount` decimal(20,2) NOT NULL DEFAULT '0.00',
+  `order_discount` decimal(20,2) NOT NULL DEFAULT '0.00',
+  `order_payment_method` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`order_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+/*Data for the table `order` */
+
+insert  into `order`(`order_id`,`order_member_id`,`order_status`,`order_vourcher_code`,`order_amount`,`order_discount`,`order_payment_method`) values 
+(1,1,2,'',37.00,0.00,'Online Banking'),
+(2,1,2,'',21.00,0.00,'Credit Card'),
+(3,1,1,'',32.00,0.00,'');
+
+/*Table structure for table `order_detail` */
+
+DROP TABLE IF EXISTS `order_detail`;
+
+CREATE TABLE `order_detail` (
+  `order_detail_id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `order_detail_order_id` bigint(20) NOT NULL DEFAULT '0',
+  `order_detail_status` tinyint(3) NOT NULL DEFAULT '0',
+  `order_detail_item_id` bigint(20) NOT NULL DEFAULT '0',
+  `order_detail_item_name` varchar(255) NOT NULL DEFAULT '',
+  `order_detail_quantity` int(10) NOT NULL DEFAULT '0',
+  `order_detail_item_price` decimal(20,2) NOT NULL DEFAULT '0.00',
+  `order_detail_discount` decimal(20,2) NOT NULL DEFAULT '0.00',
+  `order_detail_amount` decimal(20,2) NOT NULL DEFAULT '0.00',
+  PRIMARY KEY (`order_detail_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+/*Data for the table `order_detail` */
+
+insert  into `order_detail`(`order_detail_id`,`order_detail_order_id`,`order_detail_status`,`order_detail_item_id`,`order_detail_item_name`,`order_detail_quantity`,`order_detail_item_price`,`order_detail_discount`,`order_detail_amount`) values 
+(1,1,1,1,'Product ABC',2,16.00,0.00,32.00),
+(2,1,1,4,'Product BBB',1,5.00,0.00,5.00),
+(3,2,1,1,'Product ABC',1,16.00,0.00,16.00),
+(4,2,1,4,'Product BBB',1,5.00,0.00,5.00),
+(5,3,1,1,'Product ABC',2,16.00,0.00,32.00);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

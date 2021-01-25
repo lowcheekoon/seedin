@@ -16,6 +16,11 @@
 				<th colspan=3>Total</th>
 				<th id="mini_cart_total">0.00</th>
 			</tr>
+			<tr>
+				<th colspan=4>
+					<a href="<?= site_url('member/checkout') ?>" class="btn btn-success rounded border-1 w-100">Checkout</a>
+				</th>
+			</tr>
 		</tfoot>
 	</table>
 </div>

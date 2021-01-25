@@ -77,16 +77,16 @@
 			}
 			
 			function cart(items, total) {
-				$('#mini_cart_total').html(total);
-				$("#mini_cart").find('<tbody>').html('');
+				$('#mini_cart_total').html(total);	
+				$("#mini_cart").find('tbody').html('');
 				for(var i in items) {
 					
-					$("#mini_cart").find('<tbody>').append('<tr>');
-					$("#mini_cart").find('<tbody>').append('<td>'+ items[i].name +'</td>');
-					$("#mini_cart").find('<tbody>').append('<td>'+ items[i].qty +'</td>');
-					$("#mini_cart").find('<tbody>').append('<td>'+ items[i].price +'</td>');
-					$("#mini_cart").find('<tbody>').append('<td>'+ items[i].total +'</td>');
-					$("#mini_cart").find('<tbody>').append('</tr>');
+					$("#mini_cart").find('tbody').append('<tr>');
+					$("#mini_cart").find('tbody').append('<td>'+ items[i].name +'</td>');
+					$("#mini_cart").find('tbody').append('<td>'+ items[i].qty +'</td>');
+					$("#mini_cart").find('tbody').append('<td>'+ items[i].price +'</td>');
+					$("#mini_cart").find('tbody').append('<td>'+ items[i].total +'</td>');
+					$("#mini_cart").find('tbody').append('</tr>');
 				}
 			}
 			

@@ -33,7 +33,7 @@ class My_Model extends CI_Model {
 	}
 	
 	function for_update($id) {
-		$sql = "SELECT * FROM " . $this->db->dbprefix($this->table) . " WHERE " . $this->db->dbprefix($this->table) . "_id" . " = " . $id . " FOR UPDATE";
+		$sql = "SELECT * FROM `" . $this->db->dbprefix($this->table) . "` WHERE " . $this->db->dbprefix($this->table) . "_id" . " = " . $id . " FOR UPDATE";
 		return $this->db->query($sql)->row();
 	}
 	
